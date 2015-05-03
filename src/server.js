@@ -8,12 +8,7 @@ var app = express();
 
 Promise.promisifyAll(fs);
 
-app.get('/blog/:id', function (req, res) {
-    var parseMarkdown = function(val) {
-        res.send(marked(val.toString()));
-    };
-    fs.readFileAsync(path.join(__dirname, '../markdown/' + req.params.id)).then(parseMarkdown);
-});
+app.use(express.static('dist'));
 
 var port = process.env.PORT || 80;
 app.listen(port);

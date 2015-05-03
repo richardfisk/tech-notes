@@ -6,3 +6,4 @@
 * Replace default images
 * Change styling
 * Make index.html an output of the build process allowing generated content
+* Go through all files for meta-data about the site (robots.txt, web manifest, etc)
