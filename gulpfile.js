@@ -27,6 +27,9 @@ var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
+var swig = require('gulp-swig');
+var fs = require('fs');
+var marked = require('marked');
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -175,7 +178,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build production files, the default task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', ['jshint', 'templates', 'html', 'images', 'fonts', 'copy'], cb);
 });
 
 // Run PageSpeed Insights
@@ -187,6 +190,27 @@ gulp.task('pagespeed', function (cb) {
     // Use a Google Developer API key if you have one: http://goo.gl/RkN0vE
     // key: 'YOUR_API_KEY'
   }, cb);
+});
+
+gulp.task('templates', function(cb) {
+  var readme = fs.readFileSync('./readme.md', 'utf-8',function (err, data) {
+    if (err) throw err;
+  
+    return data;
+  });
+
+  var opts = {
+    defaults: { cache: false },
+    data: {
+      title: "Richard Fisk - Tech notes",
+      content: marked(readme),
+      head: ''
+    }
+  };
+  
+  return gulp.src('./app/*.swig')
+    .pipe(swig(opts))  
+    .pipe(gulp.dest('./dist/'));
 });
 
 // Load custom tasks from the `tasks` directory

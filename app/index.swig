@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Technical notes from Richard Fisk">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tech notes</title>
+    <title>
+    {% block title %}
+      {{title}}
+    {% endblock %}
+    </title>
 
     <!-- Add to homescreen -->
     <link rel="manifest" href="manifest.json">
@@ -34,6 +38,9 @@
 
     <!-- Page styles -->
     <link rel="stylesheet" href="styles/main.css">
+    {% block head %}
+    <link rel="stylesheet" href="main.css">
+    {% endblock %}
   </head>
   <body>
     <header class="app-bar promote-layer">
@@ -56,7 +63,9 @@
     </nav>
 
     <main>
-      @@include()
+        {% block content %}  
+          {{content|raw}}
+        {% endblock %}
     </main>
 
     <!-- build:js scripts/main.min.js -->
