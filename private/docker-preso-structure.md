@@ -6,7 +6,7 @@ What is Docker and when is it helpful?
 
 How is Docker structured
 
-How Docker is used
+How Docker is used.
 
 How collections of Docker containers can be used
 
