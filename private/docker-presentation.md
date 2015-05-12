@@ -1,8 +1,10 @@
 Docker presentation 
 
 Intro
-https://github.com/MatApple/docker/blob/master/docs/sources/concepts/introduction.rst
-"It is embarrassing to think that a 30 ton shipment of coffee can safely travel half-way across the World in less time than it takes a software team to deliver its code from one datacenter to another sitting 10 miles away”
+
+["It is embarrassing to think that a 30 ton shipment of coffee can safely travel half-way across the World in less time than it takes a software team to deliver its code from one datacenter to another sitting 10 miles away”] [1]
+
+[1]: https://github.com/MatApple/docker/blob/master/docs/sources/concepts/introduction.rst
 
 Infrastructure analogy where containers are infrastructure agnostic.
 
@@ -22,7 +24,7 @@ Time/speed from the point of view of starting a Linux container, to the sharing 
 
 Performance of container versus virtual machine
 
-Some best practices and a deep explanation of why they are important 
+Some best practices and a deep explanation of why those practices are important 
 
 How can you actually use docker in production and why it is so valuable
 
@@ -49,7 +51,7 @@ Docker is two years old
 
 The ability to share services
 producing useful tools that other developers can use to solve similar problems to the ones they are facing
-encourages other developers to solve similar problems in similar ways yet leaves the door open to picking a different approach if required
+encourages other developers to solve similar problems in similar ways yet leaves the door open to picking a different approach if required - philosophical summary of Batteries included but swappable
 
 When combined with continuous deployment...
 

@@ -1,8 +1,8 @@
-Strategy for early detection
+# Strategy for early detection
 
-Play on strengths
-Be aware of triggers
-Try to spot before it escalates
+* Play on strengths
+* Be aware of triggers
+* Try to spot before it escalates
 
-Nature of change
-Decreased motivation 
+* Nature of change
+* Decreased motivation 

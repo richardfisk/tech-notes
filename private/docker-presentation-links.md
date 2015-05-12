@@ -4,9 +4,9 @@ Docker/Microservices
 
 "containers are portable across different types of infrastructure — they can run in AWS just as easily as they can on bare-metal servers — containers make deployment of code extremely convenient."
 
-"Like water, humans tend to take the path of least resistance, and this means that each engineering group will try to embed as much logic into the portion of the application they control. This is a formula that guarantees unmaintainable code over time."
+["Like water, humans tend to take the path of least resistance, and this means that each engineering group will try to embed as much logic into the portion of the application they control. This is a formula that guarantees unmaintainable code over time."] [1]
 
-http://blog.zenika.com/index.php?post/2014/10/07/Setting-up-a-development-environment-using-Docker-and-Vagrant
+[1]: http://blog.zenika.com/index.php?post/2014/10/07/Setting-up-a-development-environment-using-Docker-and-Vagrant
 
 http://www.centurylinklabs.com/interviews/what-is-rocket-and-how-its-different-than-docker/
 
