@@ -62,7 +62,7 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="styles/main.css">
     {% block head %}
-    <link rel="stylesheet" href="main.css">
+    
     {% endblock %}
   </head>
   <body>
