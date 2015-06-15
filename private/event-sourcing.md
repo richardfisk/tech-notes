@@ -1,0 +1,1 @@
+http://www.slideshare.net/chris.e.richardson/building-and-deploying-microservices-with-event-sourcing-cqrs-and-docker-qconsf-2014
