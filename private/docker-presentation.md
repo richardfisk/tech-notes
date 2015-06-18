@@ -82,3 +82,6 @@ Scalable.  To simultaneously meet changes in demand while efficiently using infr
 
 Breaking up my monolithic apps into microservices means there are many more components to keep track of and manage; what’s available in the Docker ecosystem to help with this
 (Use a hosted Docker registry)
+
+docker machine
+docker save -o <save image to path> <image name>

@@ -1,3 +1,6 @@
+Very simple blue/green deployment
+http://nulab-inc.com/blog/nulab/blue-green-deployment-drupal-docker/
+
 http://nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/
 
 Running golang on Docker
