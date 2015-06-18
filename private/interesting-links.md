@@ -1,3 +1,7 @@
+http://branchandbound.net/blog/architecture/2015/06/on-microservices-monoliths-and-critical-thinking/
+
+http://microservices-infrastructure.readthedocs.org/en/latest/
+
 Very simple blue/green deployment
 http://nulab-inc.com/blog/nulab/blue-green-deployment-drupal-docker/
 
