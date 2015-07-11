@@ -28,3 +28,5 @@ https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-elk
 https://github.com/spujadas/elk-docker/
 
 https://github.com/wsargent/docker-cheat-sheet
+
+http://blog.amussey.com/post/85117547548/docker-starting-docker-on-system-boot-on-osx-via
